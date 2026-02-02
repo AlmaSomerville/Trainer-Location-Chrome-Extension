@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dogwise Trainer Finder</title>
+<style>
+  body {
+    width: 350px;
+    padding: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    background: #f8f9fa;
+    color: #333;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+
+  #results {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+
+  .trainer-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.1s ease;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .trainer-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  }
+
+  .trainer-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trainer-name {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .best {
+    background: #e8f5e8;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+
+  .distance {
+    font-weight: bold;
+    font-size: 14px;
+    color: #2980b9;
+  }
+
+  p.zip-info {
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+</style>
+<script src="papaparse.min.js"></script>
+<script src="popup.js"></script>
+</head>
+<body>
+  <input id="zip" placeholder="ZIP Code (auto-detected)" maxlength="5">
+  <div id="results">Looking for ZIP...</div>
+  <script src="popup.js"></script>
+</body>
+</html>
