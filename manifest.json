@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Dogwise Trainer Finder",
+  "version": "2.2",
+  "description": "Closest trainer from ZIP",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Dogwise Trainer Finder"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.hubspot.com/*", "*://app.hubspot.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
+
