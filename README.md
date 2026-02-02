@@ -82,7 +82,7 @@ PapaParse is used for CSV parsing. The library is included directly and used as-
 
 ---
 
-##skills
+## skills
 
 JavaScript fundamentals & ES6+ syntax – DOM manipulation, array methods, event handling
 
