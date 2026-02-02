@@ -82,15 +82,6 @@ PapaParse is used for CSV parsing. The library is included directly and used as-
 
 ---
 
-## Project Structure
-
-```text
-├── manifest.json        Chrome extension configuration
-├── popup.html           User interface
-├── popup.js             Main application logic
-├── content.js           ZIP code detection from the active tab
-├── papaparse.min.js     Third-party CSV parsing library
-
 ##skills
 
 JavaScript fundamentals & ES6+ syntax – DOM manipulation, array methods, event handling
@@ -104,3 +95,14 @@ Problem solving & workflow automation – transforming a multi-step manual proce
 UI & UX considerations – instant feedback, minimal delay, clear presentation of data
 
 Geospatial calculations – Haversine formula for real-world distance measurement
+
+---
+
+## Project Structure
+
+```text
+├── manifest.json        Chrome extension configuration
+├── popup.html           User interface
+├── popup.js             Main application logic
+├── content.js           ZIP code detection from the active tab
+├── papaparse.min.js     Third-party CSV parsing library
